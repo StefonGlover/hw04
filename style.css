@@ -103,3 +103,9 @@ form label {font-weight:bold}
 ul{
 	list-style-type: none;
 }
+
+input[type="submit"] {
+	background-color: #FAA;
+	font-size: 15pt;
+	font-weight: bold;
+}
