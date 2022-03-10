@@ -1,4 +1,4 @@
-<?php include("head.html"); ?>
+<?php include("head.php"); ?>
 
 <form action="matches-submit.php" method="get">
     <fieldset>
@@ -11,4 +11,4 @@
     </fieldset>
 </form>
 
-<?php include("foot.html"); ?>
+<?php include("foot.php"); ?>

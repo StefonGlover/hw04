@@ -1,4 +1,4 @@
-<?php include("head.html"); ?>
+<?php include("head.php"); ?>
 	<h1>Welcome!</h1>
 	<table>
 		<tr>
@@ -14,4 +14,4 @@
 			</a></td>
 		</tr>
 	</table>
-<?php include("foot.html"); ?>
+<?php include("foot.php"); ?>

@@ -1,4 +1,4 @@
-<?php include("head.html"); ?>
+<?php include("head.php"); ?>
 
 <form action="signup-submit.php" method="post">
     <fieldset>
@@ -16,4 +16,4 @@
     </fieldset>
 </form>
 
-<?php include("foot.html"); ?>
+<?php include("foot.php"); ?>

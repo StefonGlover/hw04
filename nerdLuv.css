@@ -109,3 +109,21 @@ input[type="submit"] {
 	font-size: 15pt;
 	font-weight: bold;
 }
+
+.match {
+	display: flex;
+}
+
+.match img {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 3em;
+}
+
+.match p {
+	background-color: #E0E0FF;
+	padding-right: 100px;
+}
+
+

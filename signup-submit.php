@@ -1,4 +1,4 @@
-<?php include("head.html"); ?>
+<?php include("head.php"); ?>
 <?php 
 
     if(empty($_POST['name']) || empty($_POST['gender']) || empty($_POST['age']) || empty($_POST['personality']) || empty($_POST['os']) || empty($_POST['minage']) || empty($_POST['maxage'])){
@@ -22,8 +22,8 @@
 <div>
 <h1>Thank you!</h1>
 <p>
-    Welcome to NerdLuv, <?php echo $_POST['name']?><br /><br />
+    Welcome to NerdLuv, <?= $_POST["name"] ?><br/><br/>
     Now <a href="matches.php">log in to see your matches!</a>
 </p>
 
-<?php include("foot.html"); ?>
+<?php include("foot.php"); ?>

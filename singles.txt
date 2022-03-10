@@ -53,3 +53,4 @@ Yukihiro Matsumoto,M,45,ENTP,Mac OS X,10,25
 Zelda,F,59,ESTP,Windows,40,62
 Sam Smith,M,33,ddf,Windows,26,36
 Gracey Hopper,F,45,4565,Windows,44,44
+Obi Wan Kenobi,M,40,SSS,Mac OS X,35,45
