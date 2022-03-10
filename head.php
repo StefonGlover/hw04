@@ -1,4 +1,6 @@
 <?php
+
+    // Creates a session for the webpage
     session_start();
 
 ?>
