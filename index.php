@@ -1,4 +1,6 @@
 <?php include("head.php"); ?>
+
+<!--Home page; Consists of a link to signup for a account and to view matches.-->
 	<h1>Welcome!</h1>
 	<table>
 		<tr>

@@ -2,10 +2,10 @@
 
 include("head.php");
 
-/* Get all singles */
+// Variable to hold all the singles in the text file
 $singles = file("singles.txt");
 
-/* Find and get user */
+
 $user_info_line = '';
 for ($i = 0; $i < count($singles); $i++) {
     $user_info_line = strstr($singles[$i], $_GET["name"]);
@@ -14,8 +14,10 @@ for ($i = 0; $i < count($singles); $i++) {
     }
 }
 
+// Returns user info, ignoring commas
 $user_info = explode(",", $user_info_line);
 
+// Getting attribute valves from the array position
 $user_gender = $user_info[1];
 $user_age = (int)$user_info[2];
 $user_personality = $user_info[3];
@@ -23,7 +25,7 @@ $user_os = $user_info[4];
 $user_min_seek = (int)$user_info[5];
 $user_max_age = (int)$user_info[6];
 
-/* get opposite gender */
+
 $match_gender = '';
 if (strcmp($user_gender, 'M') === 0) {
     $match_gender = 'F';
@@ -34,13 +36,13 @@ if (strcmp($user_gender, 'M') === 0) {
 
 $matches = array();
 
-/* Get matches */
+
 ?>
 <div>
 <?php
 $is_first = true;
 for ($i = 0; $i < count($singles); $i++) {
-    /* Get others info */
+
     $other_info_array = explode(",", $singles[$i]);
     $other_gender = $other_info_array[1];
     $other_age = (int)$other_info_array[2];
@@ -49,10 +51,10 @@ for ($i = 0; $i < count($singles); $i++) {
     $other_min_seek = (int)$other_info_array[5];
     $other_max_seek = (int)$other_info_array[6];
 
-    /* Check gender */
+  
     if (strcmp($match_gender, $other_gender) === 0) {
 
-        /* Check age compatibility */
+        
         $user_matches_others_choice = NULL;
         $other_matches_users_choice = NULL;
 
@@ -62,11 +64,11 @@ for ($i = 0; $i < count($singles); $i++) {
         if($user_min_seek <= $other_age && $other_age <= $user_max_age)
             $other_matches_users_choice = TRUE;
 
-        /* Check favorite OS */
+       
         if($user_matches_others_choice && $other_matches_users_choice){
             if (strcmp($user_os, $other_os) === 0) {
 
-                /* At least one personality type in common */
+                
                 $inRegex = "/[".$user_personality."]/";
                 if (preg_match($inRegex, $other_personality) === 1) {
                     $matches[] = $singles[$i];

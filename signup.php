@@ -1,5 +1,6 @@
 <?php include("head.php"); ?>
 
+<!--This form obtain various attributes from the user and pass it to another php page.-->
 <form action="signup-submit.php" method="post">
     <fieldset>
         <legend>New User Signup: </legend>

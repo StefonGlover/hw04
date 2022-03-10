@@ -1,6 +1,8 @@
 <?php include("head.php"); ?>
 <?php 
 
+    // This conditional statement checks if the form fields are empty .
+    // If true, the user is redirected to a try again page.
     if(empty($_POST['name']) || empty($_POST['gender']) || empty($_POST['age']) || empty($_POST['personality']) || empty($_POST['os']) || empty($_POST['minage']) || empty($_POST['maxage'])){
         header('Location: error_page.php');
 
